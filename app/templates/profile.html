@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile">
+
+<img src="\static\mjd_dp.png"  alt="Profile Picture" >
+<h1>Marry-Jane Doe</h1>
+<h6>@mjd_unknown</h6>
+<h6>Suva, Fiji</h6>
+<h6>{{value}}</h6>
+</div>
+<div class='about'>
+    <div class='bio'>
+        <p>I am web designer and developer. I like cats and museums, and spend 
+            too much time watching CSI. Lets work together on a project!</p>
+        </div>
+    <div class ='num'>
+        <h3>10</h3>
+        <h3>501</h3>
+        <h3>1000</h3>
+    </div>
+    <div class='numL'>  
+        <h4>Posts</h4>
+        <h4>Following</h4>
+        <h4>Followers</h4>
+    </div>
+
+    <button>Follow</button>
+</div>
+{% endblock %}

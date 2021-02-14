@@ -48,6 +48,16 @@ def add_header(response):
     return response
 
 
+@app.route('/profile')
+def profile():
+    date= format_date_joined()
+    return render_template('profile.html', value=date )
+
+def format_date_joined():
+    import datetime
+    date_joined=datetime.date(2015,5,6)
+    return "Joined "+ date_joined.strftime("%B, %Y")
+
 @app.errorhandler(404)
 def page_not_found(error):
     """Custom 404 page."""
@@ -55,4 +65,4 @@ def page_not_found(error):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host="0.0.0.0", port="8080")
+    app.run(debug=True, host="0.0.0.0", port=8080)

@@ -1,0 +1,42 @@
+img{
+    border-radius: 50%;
+    border: 5px solid rgb(81, 31, 148);
+    width:200px;
+    height:200px;
+}
+.about, .bio, .profile, .numL{
+    padding-bottom:3%;
+}
+body, button{
+    /*color:rgb(241, 233, 241) ;*/
+    color:white;
+    width: 100%;
+}
+.profile{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(108, 49, 185);
+    text-align: center;
+    padding-top: 3%;
+}
+
+
+.about{
+    display: block;
+    text-align: center;
+}
+.num, .numL{
+    display: flex;
+    justify-content:space-evenly;
+    color: black;
+}
+
+.bio, .numL, h6{
+    color: rgba(20, 19, 19, 0.726);
+}
+button{
+    background-color:rgb(108, 49, 185);
+    width: 20%;
+    
+}
